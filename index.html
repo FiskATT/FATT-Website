@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisk Aerospace Technology Team</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        /* Container for the Spline 3D scene */
+        #spline-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100; /* Ensures the 3D model is in the foreground */
+            pointer-events: none; /* Allows clicks to pass through to the content below */
+        }
+        /* Content overlay that appears behind the 3D scene */
+        .content-overlay {
+            position: relative;
+            z-index: 10;
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #202020;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4A5568;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Spline 3D Container -->
+    <div id="spline-container"></div>
+
+    <!-- Content Overlay -->
+    <main class="content-overlay max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Hero Section with a lot of height to enable scrolling -->
+        <section class="min-h-screen flex flex-col justify-center items-center text-center py-24">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-4">Fisk Aerospace Technology Team</h1>
+            <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-3xl">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <div class="space-x-4">
+                <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-gray-800 bg-opacity-70 backdrop-blur-lg rounded-2xl p-8 sm:p-12 my-32 shadow-xl border border-gray-700">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 text-center">About Our Mission</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-gray-300 leading-relaxed space-y-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/1F2937/F9FAFB?text=Image+Placeholder" alt="Image Placeholder" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gray-800 bg-opacity-70 backdrop-blur-lg rounded-2xl p-8 sm:p-12 my-32 shadow-xl border border-gray-700">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">Our Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-md transition transform hover:scale-105 duration-300">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-2">Project Icarus</h3>
+                    <img src="https://placehold.co/400x300/111827/9CA3AF?text=Image+Placeholder" alt="Image Placeholder" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-md transition transform hover:scale-105 duration-300">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-2">The Pathfinder Series</h3>
+                    <img src="https://placehold.co/400x300/111827/9CA3AF?text=Image+Placeholder" alt="Image Placeholder" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-900 rounded-xl p-6 shadow-md transition transform hover:scale-105 duration-300">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-2">Mars Rover Challenge</h3>
+                    <img src="https://placehold.co/400x300/111827/9CA3AF?text=Image+Placeholder" alt="Image Placeholder" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 bg-opacity-70 backdrop-blur-lg rounded-t-2xl p-8 sm:p-12 mt-32 border-t border-gray-700 text-center">
+            <p class="text-gray-400">© 2025 Fisk Aerospace Technology Team. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Spline 3D Integration Script -->
+    <script type="module">
+        // ** Important: This is where you will paste the code you get from Spline's export. **
+        // Example: <script type="module" src="https://my.spline.design/your-model-id/scene.splinecode"></script>
+
+        // For now, this placeholder URL will render a simple Spline scene.
+        const splineScript = document.createElement('script');
+        splineScript.type = 'module';
+        splineScript.src = "https://prod.spline.design/iW-K1e-C0b2m2z6e/scene.splinecode";
+        document.body.appendChild(splineScript);
+
+        // A key decision for a smooth experience is to manage the background
+        // transition and the rocket movement entirely within Spline.
+        // This ensures they are perfectly synchronized and responsive to scrolling.
+        // Your Spline project should have a scroll-based event listener that animates
+        // both the 3D model and the scene's background color.
+    </script>
+</body>
+</html>
